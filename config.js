@@ -1,7 +1,7 @@
 // ── 여기만 고치면 홈페이지의 모든 내려받기 단추가 바뀝니다 ──
 // github: GitHub 아이디, repo: 저장소 이름, webCopy: 웹 버전(앱스크립트 배포용 프로젝트) 공유 링크
 window.SD_CONFIG = {
-  github: 'bear4jesus',
+  github: 'shepherdsdesk',
   repo: 'shepherds-desk',
   webCopy: '',
   version: '1.0'
