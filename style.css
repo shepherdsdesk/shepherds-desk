@@ -285,3 +285,6 @@ footer .fine { color: var(--ink3); font-size: 13px; margin-top: 8px; }
 .mock.gas .dim { color: #5f6368; font-size: 13px; }
 .mock.gas .gas-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid #f1f3f4; }
 .mock.gas .gas-field { border: 1px solid #dadce0; border-radius: 6px; padding: 5px 10px; font-size: 13px; white-space: nowrap; }
+.guide .sub-h { font-size: 17px; font-weight: 700; margin: 32px 0 6px; letter-spacing: -0.02em; }
+.guide .cmd + .cmd { margin-top: 10px; }
+.cmd { overflow: hidden; } .cmd code { min-width: 0; overflow-x: auto; scrollbar-width: thin; }

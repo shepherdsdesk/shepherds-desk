@@ -86,16 +86,28 @@
   <section class="guide" id="mac-damaged">
     <p class="label">맥 · 문제 해결</p>
     <h2>"'Shepherd's Desk'이(가) 손상되었기 때문에 열 수 없습니다"</h2>
-    <p class="intro">파일이 실제로 망가진 것이 아니라, 인터넷에서 받은 파일에 붙는 표시 때문에 나오는 경우가 대부분입니다. <b>휴지통으로 옮기지 마시고</b> 아래 명령어로 표시를 지워 주세요.</p>
+    <p class="intro">파일이 실제로 망가진 것이 아니라, 인터넷에서 받은 파일에 붙는 표시나 앱 서명 때문에 나오는 경우가 대부분입니다. <b>휴지통으로 옮기지 마시고</b> 아래 순서대로 해 주세요. 1단계에서 열리면 2단계는 하지 않아도 됩니다.</p>
     <ol class="num">
-      <li>먼저 Shepherd's Desk를 <a href="#mac">응용 프로그램 폴더로 옮겼는지</a> 확인합니다.</li>
+      <li>먼저 Shepherd's Desk를 <a href="#mac">응용 프로그램 폴더로 옮겼는지</a> 확인합니다. DMG 창 안에서 바로 열면 이 문제가 계속 생깁니다.</li>
       <li><b>응용 프로그램 → 유틸리티 → 터미널</b>을 엽니다. (Spotlight에서 "터미널"을 찾아도 됩니다.)</li>
-      <li>아래 명령어를 복사해 터미널에 붙여 넣고 <kbd>return</kbd>을 누릅니다. 아무 글자도 나오지 않으면 정상입니다.</li>
     </ol>
+
+    <h3 class="sub-h">1단계 · 표시 지우기</h3>
+    <p class="intro">아래 명령어를 복사해 터미널에 붙여 넣고 <kbd>return</kbd>을 누릅니다. 아무 글자도 나오지 않으면 정상입니다. 그다음 Shepherd's Desk를 다시 열어 봅니다.</p>
     <div class="cmd"><code id="c1">xattr -dr com.apple.quarantine "/Applications/Shepherd's Desk.app"</code><button type="button" data-copy="c1">복사</button></div>
-    <ol class="num" start="4" style="counter-reset:n 3">
-      <li>다시 Shepherd's Desk를 엽니다. 확인 창이 뜨면 <a href="#mac-open">처음 여는 방법</a>대로 허락해 주세요.</li>
+
+    <h3 class="sub-h">2단계 · 그래도 안 열리면: 이 맥에서 다시 서명하기</h3>
+    <p class="intro">아래 명령어 세 줄을 <b>한 줄씩</b> 복사해 붙여 넣고 그때마다 <kbd>return</kbd>을 누릅니다.</p>
+    <div class="cmd"><code id="c2">sudo xattr -cr "/Applications/Shepherd's Desk.app"</code><button type="button" data-copy="c2">복사</button></div>
+    <div class="cmd"><code id="c3">sudo codesign --force --deep --sign - "/Applications/Shepherd's Desk.app"</code><button type="button" data-copy="c3">복사</button></div>
+    <div class="cmd"><code id="c4">open "/Applications/Shepherd's Desk.app"</code><button type="button" data-copy="c4">복사</button></div>
+    <ol class="num" style="margin-top:20px">
+      <li><code>Password:</code>가 나오면 맥에 로그인할 때 쓰는 암호를 넣고 <kbd>return</kbd>을 누릅니다.<small>암호를 입력해도 화면에 아무것도 보이지 않는 것이 정상입니다.</small></li>
+      <li>둘째 줄 뒤에 <code>replacing existing signature</code>가 나오면 성공입니다. 오류가 아니라 "서명을 새로 했다"는 뜻입니다.</li>
+      <li>셋째 줄로 앱이 열립니다. "확인할 수 없음" 창이 뜨면 <a href="#mac-open">처음 여는 방법</a>대로 <b>그래도 열기</b>를 눌러 주세요.</li>
     </ol>
+    <div class="callout">새 버전으로 덮어쓴 뒤 같은 메시지가 다시 나오면, 이 순서를 한 번 더 하면 됩니다.</div>
+    <div class="callout ok">그래도 열리지 않으면 터미널 화면을 찍어서 bear4jesus@gmail.com으로 보내 주세요. 맥 왼쪽 위 Apple 메뉴 → 이 Mac에 관하여의 macOS 버전도 함께 알려 주시면 도움이 됩니다.</div>
   </section>
 
   <section class="guide" id="mac-permission">
