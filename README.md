@@ -3,7 +3,7 @@
 성도 한 사람을 기억하는, 목회자의 책상.
 교구 목회자가 직접 만들고 직접 쓰는 무료 목양 도구입니다. 심방, 돌봄, 새가족, 문자, 일정을 한 화면에 모았습니다.
 
-- 홈페이지: https://YOUR-ID.github.io/shepherds-desk/
+- 홈페이지: https://bear4jesus.github.io/shepherds-desk/
 - 설치 도움말: https://bear4jesus.github.io/shepherds-desk/install.html
 
 ## 내려받기
