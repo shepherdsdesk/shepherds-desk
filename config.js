@@ -3,7 +3,7 @@
 window.SD_CONFIG = {
   github: 'shepherdsdesk',
   repo: 'shepherds-desk',
-  webCopy: '',
+  webCopy: 'https://script.google.com/d/15hm9ZqG43C56AKxUrfsGZYNZKcAYhYWslevErKYSt4GsNYt30gSY4fEy/edit?usp=sharing',
   version: '1.0'
 };
 (function () {
