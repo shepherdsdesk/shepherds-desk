@@ -268,3 +268,20 @@ footer .fine { color: var(--ink3); font-size: 13px; margin-top: 8px; }
 .toc b { display: block; font-size: 15.5px; font-weight: 700; margin: 4px 0 6px; }
 .toc span { display: block; font-size: 14px; color: var(--ink2); line-height: 1.5; }
 .toc em { font-style: normal; font-size: 12.5px; color: var(--accent); font-weight: 700; display: inline-block; background: #fdf6e7; padding: 2px 8px; border-radius: 6px; }
+
+/* 설치 도움말: 큰 링크 단추, 실제 화면 그림, 앱스크립트 화면 흉내 */
+.bigcopy { display: flex; width: fit-content; margin: 12px 0 6px; height: 48px; padding: 0 22px; font-size: 15.5px; border-radius: 12px; box-shadow: 0 6px 18px rgba(46, 91, 62, .25); }
+.gshot { margin: 14px 0 4px; max-width: 760px; }
+.gshot img { border-radius: 12px; border: 1px solid var(--line); box-shadow: var(--shadow-md); }
+.gshot figcaption { margin-top: 8px; font-size: 13px; color: var(--ink3); }
+.mock.gas { background: #fff; border-color: #dadce0; max-width: 560px; padding: 0; overflow: hidden; font-family: "Google Sans", Roboto, Arial, "Noto Sans KR", sans-serif; }
+.mock.gas .gas-top { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border-bottom: 1px solid #e8eaed; }
+.mock.gas .gas-top b { margin: 0; font-size: 15px; }
+.mock.gas .gas-icons { display: flex; align-items: center; gap: 8px; }
+.mock.gas .gas-ic { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; }
+.mock.gas .gas-ic.hl, .mock.gas .gas-field.hl { box-shadow: 0 0 0 3px rgba(224, 161, 12, .7); }
+.mock.gas .gas-tip { font-size: 12px; background: #3c4043; color: #fff; border-radius: 4px; padding: 3px 8px; }
+.mock.gas .gas-body { padding: 16px 18px 18px; }
+.mock.gas .dim { color: #5f6368; font-size: 13px; }
+.mock.gas .gas-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid #f1f3f4; }
+.mock.gas .gas-field { border: 1px solid #dadce0; border-radius: 6px; padding: 5px 10px; font-size: 13px; white-space: nowrap; }

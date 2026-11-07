@@ -114,10 +114,21 @@
     <p class="intro">웹 버전은 목사님의 구글 계정 안에서 돌아갑니다. 구글 앱스크립트 프로젝트의 사본을 내 계정에 만들고, 나만 여는 웹 주소로 배포하면 됩니다. 컴퓨터에서 한 번만 하시면 됩니다. 10분 정도 걸립니다.</p>
     <div class="callout">교회에서 받은 구글 계정(학교·회사용 Workspace)은 관리자가 막아 두었을 수 있습니다. 개인 Gmail 계정을 권합니다.</div>
     <ol class="num">
-      <li>컴퓨터 브라우저로 구글 계정에 로그인한 뒤, <a href="#web" data-link="webcopy"><b>웹 버전 사본 링크</b></a>를 엽니다.<small>코드가 보이는 편집기 화면이 먼저 열립니다. 읽기 전용이라 고칠 수 없는 것이 정상입니다.</small></li>
-      <li>화면 왼쪽 끝 세로 아이콘 줄의 <b>맨 위 ⓘ(개요)</b>를 누릅니다. 개요 화면 오른쪽 위의 <b>겹친 종이 모양 아이콘(사본 만들기)</b>을 누릅니다.<small>"Shepherd's Desk 웹의 사본"이라는 새 프로젝트가 내 드라이브에 생깁니다. 이제부터는 이 사본에서 작업합니다.</small></li>
+      <li>컴퓨터 브라우저로 구글 계정에 로그인한 뒤, 아래 단추를 눌러 웹 버전 원본을 엽니다.
+        <a class="btn primary bigcopy" href="#web" data-link="webcopy" target="_blank" rel="noopener">웹 버전 사본 링크 열기 <span aria-hidden="true">↗</span></a>
+        <small>새 탭에 코드가 보이는 편집기 화면이 먼저 열립니다. 읽기 전용이라 고칠 수 없는 것이 정상입니다.</small></li>
+      <li>화면 왼쪽 끝 세로 아이콘 줄의 <b>맨 위 ⓘ(개요)</b>를 누릅니다.
+        <figure class="gshot"><img src="guide-overview-icon.jpg" alt="앱스크립트 편집기 왼쪽 끝 세로 아이콘 줄의 맨 위 ⓘ 아이콘에 빨간 표시" width="900" height="420" loading="lazy"><figcaption>편집기 화면 왼쪽 위. 빨간 네모가 ⓘ 개요입니다.</figcaption></figure></li>
+      <li>개요 화면 <b>오른쪽 위</b>의 <b>겹친 종이 모양 아이콘(사본 만들기)</b>을 누릅니다.
+        <div class="mock gas" role="img" aria-label="개요 화면 예시: 오른쪽 위 사본 만들기 아이콘">
+          <div class="gas-top"><b>개요</b><span class="gas-icons"><span class="gas-ic hl" title="사본 만들기"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#444" stroke-width="2"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M4 16V6a2 2 0 0 1 2-2h10"/></svg></span><span class="gas-tip">사본 만들기</span></span></div>
+          <div class="gas-body"><p><b>Shepherd's Desk 웹 (배포용)</b></p><p class="dim">소유자 · 최근 수정 · 프로젝트 정보</p></div>
+        </div>
+        <p class="mock-note">그림은 이해를 돕기 위해 다시 그린 것입니다.</p>
+        <small>"…의 사본"이라는 새 프로젝트가 새 탭에 열리고 내 드라이브에 저장됩니다. 이제부터는 이 사본에서 작업합니다.</small></li>
       <li>위쪽 이름을 눌러 <b>Shepherd's Desk</b>로 바꿉니다. (선택)</li>
-      <li>왼쪽 <b>&lt;&gt; 편집기</b>에서 <code>Code.gs</code>를 엽니다. 위쪽 함수 목록에서 <b>setup</b>을 고르고 <b>▷ 실행</b>을 누릅니다.</li>
+      <li>왼쪽 <b>&lt;&gt; 편집기</b>에서 <code>Code.gs</code>를 엽니다. 위쪽 함수 목록에서 <b>setup</b>을 고르고 <b>▷ 실행</b>을 누릅니다.
+        <figure class="gshot"><img src="guide-run-setup.jpg" alt="함수 목록의 setup과 실행 단추에 빨간 표시" width="1100" height="300" loading="lazy"><figcaption>① 함수 목록에서 setup을 고르고 ② 실행을 누릅니다.</figcaption></figure></li>
       <li>"승인 필요" 창이 뜨면 <b>권한 검토</b> → 내 구글 계정을 고릅니다. 경고 화면이 나오면 <a href="#web-warning">다음 단계</a>를 따라 주세요.</li>
       <li>아래 실행 로그에 <b>"준비 완료"</b>와 <b>맥 앱 연결 키</b>가 나오면 성공입니다. 연결 키는 <a href="#sync">맥과 연결할 때</a> 씁니다.</li>
     </ol>
@@ -148,7 +159,18 @@
     <ol class="num">
       <li>오른쪽 위 <b>배포 → 새 배포</b>를 누릅니다.</li>
       <li>"유형 선택" 옆 톱니바퀴 ⚙ → <b>웹 앱</b>을 고릅니다.</li>
-      <li>설명에 "휴대폰"이라고 적고, <b>다음 사용자 인증 정보로 실행: 나</b>, <b>액세스 권한이 있는 사용자: 나만</b>으로 둡니다.</li>
+      <li>설명에 "휴대폰"이라고 적고, <b>다음 사용자 인증 정보로 실행: 나</b>, <b>액세스 권한이 있는 사용자: 나만</b>으로 둡니다.
+        <div class="mock gas" role="img" aria-label="새 배포 창 예시">
+          <div class="gas-top"><b>새 배포</b></div>
+          <div class="gas-body">
+            <div class="gas-row"><span class="dim">유형 선택</span><span class="gas-field hl">⚙ 웹 앱</span></div>
+            <div class="gas-row"><span class="dim">설명</span><span class="gas-field">휴대폰</span></div>
+            <div class="gas-row"><span class="dim">다음 사용자 인증 정보로 실행</span><span class="gas-field hl">나 (내 계정)</span></div>
+            <div class="gas-row"><span class="dim">액세스 권한이 있는 사용자</span><span class="gas-field hl">나만</span></div>
+            <div class="bt"><span>취소</span><span class="hl" style="background:#1a73e8;border-color:#1a73e8">배포</span></div>
+          </div>
+        </div>
+        <p class="mock-note">그림은 이해를 돕기 위해 다시 그린 것입니다. 노란 테두리가 고를 곳입니다.</p></li>
       <li><b>배포</b>를 누르고, 나오는 <b>웹 앱 URL</b>(<code>/exec</code>로 끝나는 주소)을 복사해 둡니다.</li>
       <li>그 주소를 브라우저에서 열어 오늘 화면이 나오면 성공입니다.</li>
     </ol>
