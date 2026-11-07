@@ -260,7 +260,7 @@
     seg(document.getElementById('titles'), titles, 't'); seg(document.getElementById('events'), Object.keys(events), 'e');
     document.getElementById('who').textContent = '김은혜 ' + st.t;
     var h = '<mark>김은혜 ' + short(st.t) + '님</mark>';
-    document.getElementById('bubble').innerHTML = events[st.e].split('{호칭}').map(esc).join(h) + '\n- 샘물교회 이세진 목사 드림';
+    document.getElementById('bubble').innerHTML = events[st.e].split('{호칭}').map(esc).join(h) + '\n- 할렐루야교회 이세진 목사 드림';
   }
   draw();
 })();
