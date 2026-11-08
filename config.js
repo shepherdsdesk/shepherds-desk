@@ -4,7 +4,7 @@ window.SD_CONFIG = {
   github: 'shepherdsdesk',
   repo: 'shepherds-desk',
   webCopy: 'https://script.google.com/d/15hm9ZqG43C56AKxUrfsGZYNZKcAYhYWslevErKYSt4GsNYt30gSY4fEy/edit?usp=sharing',
-  version: '1.1'
+  version: '1.1.1'
 };
 (function () {
   var c = window.SD_CONFIG, ready = c.github && c.github !== 'YOUR-ID';
