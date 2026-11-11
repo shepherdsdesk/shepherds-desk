@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
@@ -20,7 +21,7 @@
   <div class="wrap">
     <a class="brand" href="#top"><img src="icon.png" alt="">Shepherd's Desk</a>
     <nav aria-label="주 메뉴">
-      <a href="#story">만든 이야기</a><a href="#why">왜 필요한가</a><a href="#features">기능</a><a href="#where">맥·웹</a><a href="#privacy">개인정보</a><a href="install.html">설치 도움말</a>
+      <a href="#story">만든 이야기</a><a href="#why">왜 필요한가</a><a href="#features">기능</a><a href="#where">맥·웹</a><a href="#privacy">개인정보</a><a href="verses.html">암송 구절</a><a href="install.html">설치 도움말</a>
     </nav>
     <a class="btn sm primary dl" href="#download">내려받기</a>
   </div>
@@ -34,7 +35,7 @@
     <div class="actions">
       <a class="btn primary" href="#download">맥용 내려받기</a>
       <a class="btn" href="install.html#web">웹 버전 설치하기</a>
-      <a class="btn" href="#download">GitHub</a>
+      <a class="btn" href="#download" data-link="github">GitHub</a>
     </div>
     <p class="status"><b>공개 준비 중</b> · macOS 11 이상 (애플 실리콘) · 웹은 아이폰, 아이패드, 윈도우 브라우저</p>
     <div class="stage">
@@ -187,6 +188,10 @@
         <a class="dlbox" href="#download" aria-disabled="true"><span><b>맥용 내려받기</b><small>애플 실리콘(M1 이후) · macOS 11 이상 · 약 100MB</small></span><span class="go">공개 준비 중</span></a>
         <a class="dlbox" href="install.html#web"><span><b>웹 버전 설치</b><small>아이폰 · 아이패드 · 윈도우 · 구글 계정 필요</small></span><span class="go">설치 방법 →</span></a>
       </div>
+      <div class="dlrow">
+        <a class="dlbox" href="#download" data-link="verses"><span><b>말씀 양식 내려받기 (엑셀)</b><small>주제별 암송 180 · 제자의 도 72 · 제자 삼는 자 45 · 상황별 말씀 구절 주소</small></span><span class="go">엑셀 받기 →</span></a>
+        <a class="dlbox" href="verses.html"><span><b>암송 구절 목록 보기</b><small>화면에서 보고 바로 인쇄할 수 있습니다</small></span><span class="go">목록 보기 →</span></a>
+      </div>
 
       <h3 style="font-size:17px;margin-top:56px">설치가 막혔나요? 지금 보이는 화면을 고르세요.</h3>
       <div class="picker">
@@ -219,7 +224,7 @@
 <footer>
   <div class="wrap">
     <p class="who">만든 사람 <b>이세진 목사</b> · 의견과 문의 bear4jesus@gmail.com</p>
-    <p class="links"><a href="https://mokyangdesk.com/">목양 데스크</a><a href="install.html">설치 도움말</a><a href="#privacy">개인정보</a><a href="#faq">묻고 답하기</a><a href="#download">내려받기</a></p>
+    <p class="links"><a href="https://mokyangdesk.com/">목양 데스크</a><a href="install.html">설치 도움말</a><a href="verses.html">암송 구절</a><a href="#privacy">개인정보</a><a href="#faq">묻고 답하기</a><a href="#download">내려받기</a></p>
     <p class="fine">글꼴: Pretendard, 고운바탕 (SIL OFL 1.1). 이 프로그램은 있는 그대로 무료로 제공되며 어떤 보증도 하지 않습니다. 성도 정보는 주기적으로 백업해 주세요.</p>
   </div>
 </footer>
